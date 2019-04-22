@@ -67,6 +67,22 @@ namespace PostApi.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
-        }        
+        }    
+        // DELETE: api/Post/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeletePostItem(long id)
+        {
+            var PostItem = await _context.PostItems.FindAsync(id);
+
+            if (PostItem == null)
+            {
+                return NotFound();
+            }
+
+            _context.PostItems.Remove(PostItem);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }            
     }
 }
