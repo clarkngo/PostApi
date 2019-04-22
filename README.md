@@ -13,3 +13,11 @@ CREATE TABLE IF NOT EXISTS `Post` (
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB;
 ```
+
+Starting your MySQL Server
+In MacOs,
+- System preferences
+- MySQL
+- Start MySQL Server
+  - Choose Use legacy password
+Source: https://stackoverflow.com/questions/49194719/authentication-plugin-caching-sha2-password-cannot-be-loaded
