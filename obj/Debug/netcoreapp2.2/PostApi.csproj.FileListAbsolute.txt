@@ -4,3 +4,11 @@
 /Users/clarkngo/dev/dotnet-projects/PostApi/obj/Debug/netcoreapp2.2/PostApi.RazorAssemblyInfo.cs
 /Users/clarkngo/dev/dotnet-projects/PostApi/obj/Debug/netcoreapp2.2/PostApi.AssemblyInfoInputs.cache
 /Users/clarkngo/dev/dotnet-projects/PostApi/obj/Debug/netcoreapp2.2/PostApi.AssemblyInfo.cs
+/Users/clarkngo/dev/dotnet-projects/PostApi/bin/Debug/netcoreapp2.2/PostApi.deps.json
+/Users/clarkngo/dev/dotnet-projects/PostApi/bin/Debug/netcoreapp2.2/PostApi.runtimeconfig.json
+/Users/clarkngo/dev/dotnet-projects/PostApi/bin/Debug/netcoreapp2.2/PostApi.runtimeconfig.dev.json
+/Users/clarkngo/dev/dotnet-projects/PostApi/bin/Debug/netcoreapp2.2/PostApi.dll
+/Users/clarkngo/dev/dotnet-projects/PostApi/bin/Debug/netcoreapp2.2/PostApi.pdb
+/Users/clarkngo/dev/dotnet-projects/PostApi/obj/Debug/netcoreapp2.2/PostApi.RazorTargetAssemblyInfo.cache
+/Users/clarkngo/dev/dotnet-projects/PostApi/obj/Debug/netcoreapp2.2/PostApi.dll
+/Users/clarkngo/dev/dotnet-projects/PostApi/obj/Debug/netcoreapp2.2/PostApi.pdb
