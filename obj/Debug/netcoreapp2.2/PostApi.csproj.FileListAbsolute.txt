@@ -1,0 +1,6 @@
+/Users/clarkngo/dev/dotnet-projects/PostApi/obj/Debug/netcoreapp2.2/PostApi.csprojAssemblyReference.cache
+/Users/clarkngo/dev/dotnet-projects/PostApi/obj/Debug/netcoreapp2.2/PostApi.csproj.CoreCompileInputs.cache
+/Users/clarkngo/dev/dotnet-projects/PostApi/obj/Debug/netcoreapp2.2/PostApi.RazorAssemblyInfo.cache
+/Users/clarkngo/dev/dotnet-projects/PostApi/obj/Debug/netcoreapp2.2/PostApi.RazorAssemblyInfo.cs
+/Users/clarkngo/dev/dotnet-projects/PostApi/obj/Debug/netcoreapp2.2/PostApi.AssemblyInfoInputs.cache
+/Users/clarkngo/dev/dotnet-projects/PostApi/obj/Debug/netcoreapp2.2/PostApi.AssemblyInfo.cs

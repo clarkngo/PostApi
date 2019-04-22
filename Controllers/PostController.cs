@@ -45,5 +45,14 @@ namespace PostApi.Controllers
 
             return PostItem;
         }        
+        // POST: api/Post
+        [HttpPost]
+        public async Task<ActionResult<PostItem>> PostPostItem(PostItem item)
+        {
+            _context.PostItems.Add(item);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetPostItem), new { id = item.Id }, item);
+        }
     }
 }
