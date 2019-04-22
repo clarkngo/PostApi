@@ -21,7 +21,7 @@ namespace PostApi.Controllers
             {
                 // Create a new PostItem if collection is empty,
                 // which means you can't delete all PostItems.
-                _context.PostItems.Add(new PostItem { Message = "Item1" });
+                _context.PostItems.Add(new PostItem { Content = "Item1" });
                 _context.SaveChanges();
             }
         }
