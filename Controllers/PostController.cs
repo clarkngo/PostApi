@@ -54,5 +54,19 @@ namespace PostApi.Controllers
 
             return CreatedAtAction(nameof(GetPostItem), new { id = item.Id }, item);
         }
+        // PUT: api/Post/5
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutPostItem(long id, PostItem item)
+        {
+            if (id != item.Id)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(item).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }        
     }
 }
