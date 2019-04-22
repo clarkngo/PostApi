@@ -25,5 +25,25 @@ namespace PostApi.Controllers
                 _context.SaveChanges();
             }
         }
+       // GET: api/Post
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<PostItem>>> GetPostItems()
+        {
+            return await _context.PostItems.ToListAsync();
+        }
+
+        // GET: api/Post/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<PostItem>> GetPostItem(long id)
+        {
+            var PostItem = await _context.PostItems.FindAsync(id);
+
+            if (PostItem == null)
+            {
+                return NotFound();
+            }
+
+            return PostItem;
+        }        
     }
 }
