@@ -21,3 +21,9 @@ In MacOs,
 - Start MySQL Server
   - Choose Use legacy password
 Source: https://stackoverflow.com/questions/49194719/authentication-plugin-caching-sha2-password-cannot-be-loaded
+
+Error:
+```
+There is no argument given that corresponds to the required formal parameter 'connectionString' of...
+```
+https://stackoverflow.com/questions/33816800/there-is-no-argument-given-that-corresponds-to-the-require-formal-parameter
