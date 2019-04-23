@@ -12113,7 +12113,7 @@
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
-      "MySqlConnector"
+      "MySqlConnector >= 0.53.0"
     ]
   },
   "packageFolders": {
@@ -12174,7 +12174,7 @@
           },
           "MySqlConnector": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[0.53.0, )"
           }
         },
         "imports": [
