@@ -7,11 +7,12 @@ namespace MySqlConnector.Performance.Controllers
     [Route("api/[controller]")]
     public class AsyncController : Controller
     {
+        string connection_string = "server=127.0.0.1;user id=root;password=password;port=3306;database=club_app;";
         // GET api/async
         [HttpGet]
         public async Task<IActionResult> GetLatest()
         {
-            using (var db = new AppDb("club_app"))
+            using (var db = new AppDb(connection_string))
             {
                 await db.Connection.OpenAsync();
                 var query = new PostQuery(db);
@@ -24,7 +25,7 @@ namespace MySqlConnector.Performance.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetOne(int id)
         {
-            using (var db = new AppDb("club_app"))
+            using (var db = new AppDb(connection_string))
             {
                 await db.Connection.OpenAsync();
                 var query = new PostQuery(db);
@@ -39,7 +40,7 @@ namespace MySqlConnector.Performance.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]Post body)
         {
-            using (var db = new AppDb("club_app"))
+            using (var db = new AppDb(connection_string))
             {
                 await db.Connection.OpenAsync();
                 body.Db = db;
@@ -52,7 +53,7 @@ namespace MySqlConnector.Performance.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutOne(int id, [FromBody]Post body)
         {
-            using (var db = new AppDb("club_app"))
+            using (var db = new AppDb(connection_string))
             {
                 await db.Connection.OpenAsync();
                 var query = new PostQuery(db);
@@ -69,7 +70,7 @@ namespace MySqlConnector.Performance.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteOne(int id)
         {
-            using (var db = new AppDb("club_app"))
+            using (var db = new AppDb(connection_string))
             {
                 await db.Connection.OpenAsync();
                 var query = new PostQuery(db);
@@ -85,7 +86,7 @@ namespace MySqlConnector.Performance.Controllers
         [HttpDelete]
         public async Task<IActionResult> DeleteAll()
         {
-            using (var db = new AppDb("club_app"))
+            using (var db = new AppDb(connection_string))
             {
                 await db.Connection.OpenAsync();
                 var query = new PostQuery(db);
